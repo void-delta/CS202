@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <time.h>
-int k = 100000;
+int k = 500000;
 
 int binary_search(int *arr, int l, int r, int key){
     while (l <= r) {
@@ -21,7 +21,7 @@ void main(){
         array[i] = i;
     }
     int key;
-    printf("Enter the key to be found\t");
+    printf("Enter the key to be given\t");
     scanf("%d", &key);
     clock_t t1;
     t1 = clock();

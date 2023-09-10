@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+int k = 100000;
 
 int linear_search(int *arr, int key, int n){
     // int flag = 0;
@@ -13,16 +14,16 @@ int linear_search(int *arr, int key, int n){
 }
 
 void main(){
-    int array[10000];
-    for(int i = 0; i < 10000; i++){
+    int array[k];
+    for(int i = 0; i < k; i++){
         array[i] = i;
     }
-    int k;
+    int key;
     printf("Enter the key to be found\t");
-    scanf("%d", &k);
+    scanf("%d", &key);
     clock_t t1;
     t1 = clock();
-    int n = linear_search(array, k, 10000);
+    int n = linear_search(array, key, k);
     printf("Found at %d\n", n);
     t1 = clock() - t1;
     double time1 = ((double)t1)/CLOCKS_PER_SEC;
