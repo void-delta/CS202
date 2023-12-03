@@ -1,0 +1,3 @@
+The following are the algorithms to find the Minimum Cost Spanning Tree.
+1) Kruskal's Algorithms
+2) Prim's Algorithms

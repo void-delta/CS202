@@ -20,7 +20,7 @@ int fact_it(int n){
 int main(){
     clock_t t1;
     t1 = clock();
-    int n1 = fact_rec(24);
+    int n1 = fact_rec(5);
     printf("%d\n", n1);
     t1 = clock() - t1;
     double time1 = ((double)t1)/CLOCKS_PER_SEC;
@@ -28,7 +28,7 @@ int main(){
 
     clock_t t2;
     t2 = clock();
-    int n2 = fact_it(24);
+    int n2 = fact_it(5);
     printf("%d\n", n2);
     t2 = clock() - t2;
     double time2 = ((double)t2)/CLOCKS_PER_SEC;
