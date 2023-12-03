@@ -28,7 +28,7 @@ void bellman_ford(Edges *edges, int n_ver, int n_edge, int source){
             int j_src = edges[j].source;
             int j_des = edges[j].destination;
             int j_wei = edges[j].weight;
-            if(min_weight[edges[j].source] != max && min_weight[j_src] + j_wei < min_weight[j_des]){
+            if(min_weight[j_src] != max && min_weight[j_src] + j_wei < min_weight[j_des]){
                 min_weight[j_des] = min_weight[j_src] + j_wei;
                 parent[j_des] = j_src;
             }
